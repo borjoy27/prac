@@ -1,1 +1,38 @@
-<!---->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message</title>
+</head>
+<body>
+    <script>
+        let pt1="Hello";
+        let pt2="I'm";
+        let pt3="Joy";
+        let pt4="I've hobby that mmoRPG";
+        let pt5="I wish live like my name that";
+
+        function getMessage1(){
+            return `${pt1}, ${pt2} ${pt3}`;
+        }
+
+        function getMessage2(){
+            return pt4;
+        }
+
+        function getMessage3(){
+            return `${pt5} ${pt3}`;
+        }
+
+        let idx=0;
+        const messages=[getMessage1(), getMessage2(), getMessage3()];
+
+        setInterval(()=>{
+            document.open();
+            document.write(messages[idx]);
+            idx=(idx+1);
+            document.close();
+        }, 3000);
+
+    </script>
+</body>
+</html>
